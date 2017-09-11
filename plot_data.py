@@ -148,11 +148,9 @@ if __name__ == '__main__':
 
     #suptitle("Individual convex regions")
 
-    figure(3, figsize=(6,12))
+    figure(3, figsize=(8,4))
 
-
-
-    ax=subplot(2,1,1)
+    ax=subplot(1,2,1)
     title('Sample and base partitions')
     plot_stuff(x_inliers, x_outliers, [lines_homog])
     grid()
@@ -161,7 +159,7 @@ if __name__ == '__main__':
     ylim(-2.5, 2.5)
 
     
-    subplot(2,1,2, sharex=ax, sharey=ax)
+    subplot(1,2,2, sharex=ax, sharey=ax)
     title('Union of convex regions')
     xx = []
     for nn, row in enumerate(possible):
